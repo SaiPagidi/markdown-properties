@@ -54,12 +54,14 @@ public class MarkdownProperties extends Properties {
 	 * 
 	 * @param inputStream the input stream.
 	 */
+	@Override
 	public void load(InputStream inputStream) {
 		Scanner scanner = new Scanner(inputStream, "UTF-8");
 		readProperties(scanner);
 		scanner.close();
 	}
 
+	@Override
 	public void load(Reader reader) {
 		Scanner scanner = new Scanner(reader);
 		readProperties(scanner);
@@ -73,7 +75,8 @@ public class MarkdownProperties extends Properties {
 	 * @throws RuntimeException always throws this exception, since this method is not supported by {@code MarkdownProperties}
 	 * @param stream
 	 */
-	public void loadFromXml(InputStream stream) {
+	@Override
+	public void loadFromXML(InputStream stream) {
 		throw new RuntimeException("The method is not supported by this class");
 	}
 
