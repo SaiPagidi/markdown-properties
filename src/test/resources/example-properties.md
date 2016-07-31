@@ -25,3 +25,13 @@ Defines the maximum height of a lemon tree in meters
 ``` property tree.dimension.height.max
 12
 ```
+
+## Multiline Properties
+
+### Lemon tree inscript
+
+``` property tree.inscript
+first line
+second line
+third line
+```

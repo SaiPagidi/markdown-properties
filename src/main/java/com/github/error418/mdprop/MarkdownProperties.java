@@ -71,8 +71,6 @@ public class MarkdownProperties extends Properties {
 			String propertyName = m.group(1);
 			String propertyValue = m.group(2);
 
-			System.out.println(propertyName + " " + propertyValue);
-
 			this.setProperty(propertyName, propertyValue);
 		}
 	}

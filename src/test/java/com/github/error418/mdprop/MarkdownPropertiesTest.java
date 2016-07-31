@@ -1,8 +1,9 @@
 package com.github.error418.mdprop;
 
+import org.hamcrest.Matchers;
+import org.junit.Assert;
 import org.junit.Test;
 
-import com.github.error418.mdprop.MarkdownProperties;
 
 public class MarkdownPropertiesTest {
 
@@ -11,9 +12,13 @@ public class MarkdownPropertiesTest {
 		MarkdownProperties mdProperties = new MarkdownProperties();
 		mdProperties.load(ClassLoader.class.getResourceAsStream("/example-properties.md"));
 		
-		System.out.println("#" + mdProperties.getProperty("tree.dimension.height.max") + "#");
-		System.out.println("#" + mdProperties.getProperty("tree.branch.fruits.max") + "#");
+		Assert.assertEquals("12", mdProperties.getProperty("tree.dimension.height.max"));
+		Assert.assertEquals("4", mdProperties.getProperty("tree.branch.fruits.max"));
 		
-		System.out.println(mdProperties.size());
+		Assert.assertThat(mdProperties.getProperty("tree.inscript"), Matchers.containsString("first line"));
+		Assert.assertThat(mdProperties.getProperty("tree.inscript"), Matchers.containsString("second line"));
+		Assert.assertThat(mdProperties.getProperty("tree.inscript"), Matchers.containsString("third line"));
+
+		Assert.assertEquals(3, mdProperties.size());
 	}
 }
