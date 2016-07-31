@@ -12,8 +12,8 @@ This library is written to support the `CommonMark` Markdown specification.
 
 To embed your property configuration inside a Markdown file you specify a code block like this:
 
-	``` property here.goes.the.property.key
-	And goes the value
+	```property:here.goes.the.property.key
+	And here goes the value
 	```
 
 For a more detailled example you can view the [Example Properties](example-properties.md)

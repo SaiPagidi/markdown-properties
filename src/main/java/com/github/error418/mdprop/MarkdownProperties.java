@@ -38,7 +38,7 @@ public class MarkdownProperties extends Properties {
 	 * </p>
 	 * 
 	 */
-	private static Pattern PROPERTY_PATTERN = Pattern.compile("^```\\s*property\\s+(\\S+)\\s*^(.*?)\\s*^```", Pattern.UNIX_LINES | Pattern.MULTILINE | Pattern.DOTALL | Pattern.CASE_INSENSITIVE);
+	private static Pattern PROPERTY_PATTERN = Pattern.compile("^```property:(\\S+)\\s*^(.*?)\\s*^```", Pattern.UNIX_LINES | Pattern.MULTILINE | Pattern.DOTALL | Pattern.CASE_INSENSITIVE);
 
 	public MarkdownProperties() {
 		super();
