@@ -21,4 +21,10 @@ public class MarkdownPropertiesTest {
 
 		Assert.assertEquals(3, mdProperties.size());
 	}
+	
+	@Test(expected=RuntimeException.class)
+	public void testXmlMethod() throws Exception {
+		MarkdownProperties mdProperties = new MarkdownProperties();
+		mdProperties.loadFromXML(ClassLoader.class.getResourceAsStream("/example-properties.md"));
+	}
 }

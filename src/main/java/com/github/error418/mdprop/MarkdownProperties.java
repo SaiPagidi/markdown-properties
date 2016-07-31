@@ -28,13 +28,13 @@ public class MarkdownProperties extends Properties {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * Regex Pattern, which finds properties in a Markdown file.
+	 * RegEx Pattern, which finds properties in a Markdown file.
 	 * 
 	 * <p>
-	 * Group 1: Property name
+	 * Matching group 1: Property name
 	 * </p>
 	 * <p>
-	 * Group 2: Property value
+	 * Matching group 2: Property value
 	 * </p>
 	 * 
 	 */
@@ -48,19 +48,35 @@ public class MarkdownProperties extends Properties {
 		super(defaults);
 	}
 
+	/**
+	 * Reads a Markdown file from the input byte stream.
+	 * The input stream is assumed to use the UTF-8 character encoding
+	 * 
+	 * @param inputStream the input stream.
+	 */
+	@Override
 	public void load(InputStream inputStream) {
-		Scanner scanner = new Scanner(inputStream);
+		Scanner scanner = new Scanner(inputStream, "UTF-8");
 		readProperties(scanner);
 		scanner.close();
 	}
 
+	@Override
 	public void load(Reader reader) {
 		Scanner scanner = new Scanner(reader);
 		readProperties(scanner);
 		scanner.close();
 	}
 
-	public void loadFromXml(InputStream stream) {
+	/**
+	 * This method is not supported by {@code MarkdownProperties} and will always throw a
+	 * {@link RuntimeException}.
+	 * 
+	 * @throws RuntimeException always throws this exception, since this method is not supported by {@code MarkdownProperties}
+	 * @param stream
+	 */
+	@Override
+	public void loadFromXML(InputStream stream) {
 		throw new RuntimeException("The method is not supported by this class");
 	}
 
