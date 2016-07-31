@@ -10,7 +10,7 @@ This section covers fruit related configuration
 
 The maximum amount of fruits per branch
 
-``` property tree.branch.fruits.max
+```property tree.branch.fruits.max
 4
 ```
 
@@ -22,7 +22,7 @@ This section configures the lemon tree dimensions.
 
 Defines the maximum height of a lemon tree in meters
 
-``` property tree.dimension.height.max
+```property tree.dimension.height.max
 12
 ```
 
@@ -30,7 +30,7 @@ Defines the maximum height of a lemon tree in meters
 
 ### Lemon tree inscript
 
-``` property tree.inscript
+```property tree.inscript
 I wonder how,
 I wonder why,
 yesterday you told me about the blue, blue sky
