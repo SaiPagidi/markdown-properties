@@ -1,4 +1,4 @@
-package com.github.error418.mdprop;
+package com.github.error418.properties;
 
 import java.io.InputStream;
 import java.io.Reader;
@@ -21,8 +21,6 @@ import java.util.regex.Pattern;
  * </pre>
  * </p>
  * 
- * @author Micha
- *
  */
 public class MarkdownProperties extends Properties {
 	private static final long serialVersionUID = 1L;
