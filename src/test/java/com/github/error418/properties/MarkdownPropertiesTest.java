@@ -1,8 +1,10 @@
-package com.github.error418.mdprop;
+package com.github.error418.properties;
 
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
+
+import com.github.error418.properties.MarkdownProperties;
 
 
 public class MarkdownPropertiesTest {
