@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
  * anywhere in the file:
  * 
  * <pre>
- *	``` property here.goes.the.property.name
+ *	```property:here.goes.the.property.name
  * 	This is the property value
  *	```
  * </pre>
