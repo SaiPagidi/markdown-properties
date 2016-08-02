@@ -2,6 +2,18 @@
 
 Store your application properties and their documentation in one file.
 
+## Get it
+
+You can get the library via Maven
+
+```xml
+<dependency>
+  <groupId>com.github.error418.properties</groupId>
+  <artifactId>md-properties</artifactId>
+  <version>0.0.1</version>
+</dependency>
+```
+
 ## Usage
 
 This library is written to support the `CommonMark` Markdown specification.
