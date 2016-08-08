@@ -2,6 +2,25 @@
 
 Store your application properties and their documentation in one file.
 
+## Intention
+
+Comments in property files tend to be not that appealing to the eye. The main reason is the lack of possibilities
+to format the text written in these files. A different approach would be to write a separate documentation supporting
+these features, which has the downside, that the location and prescense of these files needs to be known by users and developers.
+
+The question is: Why should a property file not be configuration and well-readable documentation at the same time?
+Markdown supports a easy-to-learn and powerful way to write nicely formatted text. Storing, reading and configuring
+properties could be done with any text editor.
+
+For a small example and giving you an idea of what this project is about you can view the project's
+[Example Properties](example-properties.md) file.
+
+### TL;DR
+
+> Storing documentation and the property values in one file (which supports text formatting) saves the developer
+> and the user time and configuration errors.
+
+
 ## Usage
 
 This library is written to support the `CommonMark` Markdown specification.
