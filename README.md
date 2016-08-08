@@ -21,8 +21,20 @@ For a more detailled example you can view the [Example Properties](example-prope
 Loading Properties in your code can then be done like this:
 
 ```java
-MarkdownProperties mdProperties = new MarkdownProperties();
+Properties mdProperties = new MarkdownProperties();
 mdProperties.load(ClassLoader.class.getResourceAsStream("/example-properties.md"));
 ```
 
 You may notice `MarkdownProperties` extends `java.util.Properties` and can be used like a "normal" `Properties` instance.
+
+## Get it
+
+You can get the library via Maven
+
+```xml
+<dependency>
+  <groupId>com.github.error418.properties</groupId>
+  <artifactId>md-properties</artifactId>
+  <version>0.0.1</version>
+</dependency>
+```
