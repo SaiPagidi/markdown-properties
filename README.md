@@ -21,7 +21,7 @@ For a more detailled example you can view the [Example Properties](example-prope
 Loading Properties in your code can then be done like this:
 
 ```java
-MarkdownProperties mdProperties = new MarkdownProperties();
+Properties mdProperties = new MarkdownProperties();
 mdProperties.load(ClassLoader.class.getResourceAsStream("/example-properties.md"));
 ```
 
