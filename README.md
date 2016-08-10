@@ -13,7 +13,7 @@ Markdown supports a easy-to-learn and powerful way to write nicely formatted tex
 properties could be done with any text editor.
 
 For a small example and giving you an idea of what this project is about you can view the project's
-[Example Properties](example-properties.md) file.
+[Example Properties](examples/example-properties.md) file.
 
 ### TL;DR
 
@@ -33,7 +33,7 @@ To embed your property configuration inside a Markdown file you specify a code b
 	And here goes the value
 	```
 
-For a more detailled example you can view the [Example Properties](example-properties.md)
+For a more detailled example you can view the [Example Properties](examples/example-properties.md)
 
 ### Loading Properties
 
