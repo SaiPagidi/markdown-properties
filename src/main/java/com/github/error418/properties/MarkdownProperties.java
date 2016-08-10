@@ -1,6 +1,7 @@
 package com.github.error418.properties;
 
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.io.Reader;
 import java.util.Properties;
 import java.util.Scanner;
@@ -75,6 +76,33 @@ public class MarkdownProperties extends Properties {
 	 */
 	@Override
 	public void loadFromXML(InputStream stream) {
+		throw new RuntimeException("The method is not supported by this class");
+	}
+	
+	/**
+	 * This method is not supported by {@code MarkdownProperties} and will always throw a
+	 * {@link RuntimeException}.
+	 * 
+	 * @throws RuntimeException always throws this exception, since this method is not supported by {@code MarkdownProperties}
+	 * @param stream
+	 * @param comment
+	 */
+	@Override
+	public void storeToXML(OutputStream stream, String comment) {
+		throw new RuntimeException("The method is not supported by this class");
+	}
+	
+	/**
+	 * This method is not supported by {@code MarkdownProperties} and will always throw a
+	 * {@link RuntimeException}.
+	 * 
+	 * @throws RuntimeException always throws this exception, since this method is not supported by {@code MarkdownProperties}
+	 * @param stream
+	 * @param comment
+	 * @param encoding
+	 */
+	@Override
+	public void storeToXML(OutputStream writer, String comment, String encoding) {
 		throw new RuntimeException("The method is not supported by this class");
 	}
 

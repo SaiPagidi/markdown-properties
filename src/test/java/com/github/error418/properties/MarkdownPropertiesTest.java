@@ -29,4 +29,16 @@ public class MarkdownPropertiesTest {
 		Properties mdProperties = new MarkdownProperties();
 		mdProperties.loadFromXML(ClassLoader.class.getResourceAsStream("/example-properties.md"));
 	}
+	
+	@Test(expected=RuntimeException.class)
+	public void testXmlWriterMethodA() throws Exception {
+		Properties mdProperties = new MarkdownProperties();
+		mdProperties.storeToXML(System.out, "test", "utf-8");
+	}
+	
+	@Test(expected=RuntimeException.class)
+	public void testXmlWriterMethodB() throws Exception {
+		Properties mdProperties = new MarkdownProperties();
+		mdProperties.storeToXML(System.out, "test");
+	}
 }
