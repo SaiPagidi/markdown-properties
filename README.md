@@ -1,4 +1,4 @@
-# markdown-properties [![Build Status](https://travis-ci.org/error418/markdown-properties.svg?branch=master)](https://travis-ci.org/error418/md-properties)
+# markdown-properties [![Build Status](https://travis-ci.org/error418/markdown-properties.svg?branch=master)](https://travis-ci.org/error418/markdown-properties)
 
 Store application properties along with their documentation in a neat Markdown file and load them using this library.
 
