@@ -1,17 +1,17 @@
 package com.github.error418.properties;
 
+import java.util.Properties;
+
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
-
-import com.github.error418.properties.MarkdownProperties;
 
 
 public class MarkdownPropertiesTest {
 
 	@Test
 	public void testPropertyLoad() throws Exception {
-		MarkdownProperties mdProperties = new MarkdownProperties();
+		Properties mdProperties = new MarkdownProperties();
 		mdProperties.load(ClassLoader.class.getResourceAsStream("/example-properties.md"));
 		
 		Assert.assertEquals("12", mdProperties.getProperty("tree.dimension.height.max"));
@@ -26,7 +26,8 @@ public class MarkdownPropertiesTest {
 	
 	@Test(expected=RuntimeException.class)
 	public void testXmlMethod() throws Exception {
-		MarkdownProperties mdProperties = new MarkdownProperties();
+		Properties mdProperties = new MarkdownProperties();
 		mdProperties.loadFromXML(ClassLoader.class.getResourceAsStream("/example-properties.md"));
 	}
+	
 }

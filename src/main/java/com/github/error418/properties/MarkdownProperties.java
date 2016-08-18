@@ -1,7 +1,10 @@
 package com.github.error418.properties;
 
 import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.Reader;
+import java.io.Writer;
 import java.util.Properties;
 import java.util.Scanner;
 import java.util.regex.MatchResult;
@@ -66,18 +69,11 @@ public class MarkdownProperties extends Properties {
 		scanner.close();
 	}
 
-	/**
-	 * This method is not supported by {@code MarkdownProperties} and will always throw a
-	 * {@link RuntimeException}.
-	 * 
-	 * @throws RuntimeException always throws this exception, since this method is not supported by {@code MarkdownProperties}
-	 * @param stream
-	 */
 	@Override
 	public void loadFromXML(InputStream stream) {
 		throw new RuntimeException("The method is not supported by this class");
 	}
-
+	
 	private void readProperties(Scanner scanner) {
 		while (scanner.findWithinHorizon(PROPERTY_PATTERN, 0) != null) {
 			MatchResult m = scanner.match();

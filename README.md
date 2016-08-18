@@ -1,4 +1,4 @@
-# md-properties [![Build Status](https://travis-ci.org/error418/md-properties.svg?branch=master)](https://travis-ci.org/error418/md-properties)
+# markdown-properties [![Build Status](https://travis-ci.org/error418/markdown-properties.svg?branch=master)](https://travis-ci.org/error418/markdown-properties)
 
 Store application properties along with their documentation in a neat Markdown file and load them using this library.
 
@@ -13,7 +13,7 @@ Markdown supports a easy-to-learn and powerful way to write nicely formatted tex
 properties could be done with any text editor.
 
 For a small example and giving you an idea of what this project is about you can view the project's
-[Example Properties](example-properties.md) file.
+[Example Properties](examples/example-properties.md) file.
 
 ### TL;DR
 
@@ -33,7 +33,7 @@ To embed your property configuration inside a Markdown file you specify a code b
 	And here goes the value
 	```
 
-For a more detailled example you can view the [Example Properties](example-properties.md)
+For a more detailled example you can view the [Example Properties](examples/example-properties.md)
 
 ### Loading Properties
 
@@ -46,6 +46,10 @@ mdProperties.load(ClassLoader.class.getResourceAsStream("/example-properties.md"
 
 You may notice `MarkdownProperties` extends `java.util.Properties` and can be used like a "normal" `Properties` instance.
 
+### Storing Properties
+
+Storing Properties is not supported by this library. Calling `store` or `storeAsXML` methods will behave like the standard `Property` class methods.
+
 ## Get it
 
 You can get the library via Maven
@@ -53,7 +57,7 @@ You can get the library via Maven
 ```xml
 <dependency>
   <groupId>com.github.error418.properties</groupId>
-  <artifactId>md-properties</artifactId>
-  <version>0.0.1</version>
+  <artifactId>markdown-properties</artifactId>
+  <version>0.0.2</version>
 </dependency>
 ```

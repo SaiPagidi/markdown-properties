@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.error418.properties</groupId>
-	<artifactId>md-properties</artifactId>
-	<version>0.0.1</version>
+	<artifactId>markdown-properties</artifactId>
+	<version>0.0.2</version>
 
 	<name>Markdown Properties</name>
 	<description>Loads Properties from a Markdown file</description>
-	<url>https://github.com/error418/md-properties/</url>
+	<url>https://github.com/error418/markdown-properties/</url>
 
 	<developers>
 		<developer>
@@ -17,7 +17,7 @@
 	</developers>
 
 	<scm>
-		<url>https://github.com/error418/md-properties.git</url>
+		<url>https://github.com/error418/markdown-properties.git</url>
 	</scm>
 
 	<licenses>
@@ -58,13 +58,6 @@
 	</profiles>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.21</version>
-		</dependency>
-
-
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
