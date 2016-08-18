@@ -46,6 +46,10 @@ mdProperties.load(ClassLoader.class.getResourceAsStream("/example-properties.md"
 
 You may notice `MarkdownProperties` extends `java.util.Properties` and can be used like a "normal" `Properties` instance.
 
+### Storing Properties
+
+Storing Properties is not supported by this library. Calling `store` or `storeAsXML` methods will behave like the standard `Property` class methods.
+
 ## Get it
 
 You can get the library via Maven
