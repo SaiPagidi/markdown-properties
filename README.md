@@ -4,6 +4,7 @@ Store application properties along with their documentation in a neat Markdown f
 
 [![Build Status](https://travis-ci.org/error418/markdown-properties.svg?branch=master)](https://travis-ci.org/error418/markdown-properties)
 [![Code Climate](https://codeclimate.com/github/error418/markdown-properties/badges/gpa.svg)](https://codeclimate.com/github/error418/markdown-properties)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.error418.properties/md-properties.svg?maxAge=2592000)](http://search.maven.org/#search%7Cga%7C1%7Ccom.github.error418.properties.markdown-properties)
 
 ## Intention
 
