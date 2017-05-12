@@ -1,6 +1,10 @@
-# markdown-properties [![Build Status](https://travis-ci.org/error418/markdown-properties.svg?branch=master)](https://travis-ci.org/error418/markdown-properties)
+# markdown-properties 
 
 Store application properties along with their documentation in a neat Markdown file and load them using this library.
+
+[![Build Status](https://travis-ci.org/error418/markdown-properties.svg?branch=master)](https://travis-ci.org/error418/markdown-properties)
+[![Code Climate](https://codeclimate.com/github/error418/markdown-properties/badges/gpa.svg)](https://codeclimate.com/github/error418/markdown-properties)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.error418.properties/markdown-properties.svg?maxAge=2592000)](http://search.maven.org/#search%7Cga%7C1%7Ccom.github.error418.properties.markdown-properties)
 
 ## Intention
 
