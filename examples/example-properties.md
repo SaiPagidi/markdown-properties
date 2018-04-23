@@ -43,7 +43,7 @@ Defines the maximum height of a lemon tree in meters
 
 ## Lemon tree inscript
 
-A inscript can be placed on the tree:
+An inscript can be placed on the tree:
 
 ```property:tree.inscript
 I wonder how,
